@@ -1,0 +1,29 @@
+{
+  "name": "Theater-Noti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeonHyungJo/Theater-Noti.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeonHyungJo/Theater-Noti/issues"
+  },
+  "homepage": "https://github.com/SeonHyungJo/Theater-Noti#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "botbuilder-adapter-slack": "^1.0.3",
+    "botkit": "^4.0.2",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.0.0",
+    "slack-node": "^0.1.8"
+  }
+}
