@@ -2,3 +2,7 @@
 
 *-lock.json
 .env
+
+AllData.js
+region*.json
+theaterJsonData_*.json

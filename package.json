@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,11 +20,15 @@
   },
   "homepage": "https://github.com/SeonHyungJo/Theater-Noti#readme",
   "dependencies": {
+    "@slack/interactive-messages": "^1.2.0",
+    "@slack/rtm-api": "^5.0.1",
+    "@slack/web-api": "^5.0.1",
     "axios": "^0.19.0",
     "botbuilder-adapter-slack": "^1.0.3",
     "botkit": "^4.0.2",
     "cheerio": "^1.0.0-rc.3",
     "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1",
     "slack-node": "^0.1.8"
   }
 }
