@@ -15,7 +15,7 @@
 ![image](https://user-images.githubusercontent.com/24274424/62062871-d31ede00-b264-11e9-8c64-89cb58f3ca18.png)
 
 
-2. 날짜검색(ex 날짜검색 / {상영관코드} / {날짜})
+3. 날짜검색(ex 날짜검색 / {상영관코드} / {날짜})
 
 ![image](https://user-images.githubusercontent.com/24274424/62062642-57bd2c80-b264-11e9-988f-9eb0cf8086bd.png)
 
