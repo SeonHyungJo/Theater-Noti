@@ -128,7 +128,7 @@ const createHelpMessage = async () => {
       'elements': [
         {
           'type': 'mrkdwn',
-          'text': ' - 지역코드 검색 : *지역코드* \n - 상영관코드 검색 : *상영관코드 / {지역코드}* \n - 상영관검색 : *상영관검색 / {검색할 단어}* \n - 날짜검색 : *날짜검색 / {상영관코드} / {날짜}* \n - 무비차트 : *{상영작 |  영화차트 | 영화리스트 | 차트 | 현재 상영작}*'
+          'text': ' - 지역코드 검색 : *지역코드* \n - 상영관코드 검색 : *상영관코드 / {지역코드}* \n - 상영관검색 : *상영관검색 / {검색할 단어}* \n - 날짜검색 : *날짜검색 / {상영관코드} / {날짜}* \n - 무비차트 : *{상영작 |  영화차트 | 영화리스트 | 무비차트 | 현재 상영작}*'
         }
       ]
     }
@@ -264,7 +264,7 @@ rtm.on('message', async event => {
   console.log(eventCodeList);
   try {
     let result;
-    const movieChartKorlist = ['상영작', '영화차트', '영화리스트', '차트', '현재 상영작']
+    const movieChartKorlist = ['상영작', '영화차트', '영화리스트', '무비차트', '현재 상영작']
 
     if (eventCodeList[0] === 'help') {
       const helpMessageBlocks = await createHelpMessage()
