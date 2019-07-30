@@ -6,19 +6,31 @@
 
 ## Example
 
-1. 지역코드
+### 1. help
 
-![image](https://user-images.githubusercontent.com/24274424/62062785-aa96e400-b264-11e9-8609-adaa87e2f6d1.png)
+![image](https://user-images.githubusercontent.com/24274424/62146580-a33d0c80-b330-11e9-8030-20dea8a659ce.png)
 
-2. 상영관코드(ex 상영관코드 / {지역코드})
+### 2. 지역코드
 
-![image](https://user-images.githubusercontent.com/24274424/62062871-d31ede00-b264-11e9-8c64-89cb58f3ca18.png)
+![image](https://user-images.githubusercontent.com/24274424/62146878-455cf480-b331-11e9-8c72-b1a8cf893bd7.png)
 
+### 3. 상영관코드 (ex 상영관코드 / {지역코드})
 
-3. 날짜검색(ex 날짜검색 / {상영관코드} / {날짜})
+![image](https://user-images.githubusercontent.com/24274424/62146659-d089ba80-b330-11e9-8cc7-94e3ea0ef0c0.png)
 
-![image](https://user-images.githubusercontent.com/24274424/62062642-57bd2c80-b264-11e9-988f-9eb0cf8086bd.png)
+### 4. 상영관검색 (ex 상영관검색 / {검색할 단어})
 
+![image](https://user-images.githubusercontent.com/24274424/62146684-db444f80-b330-11e9-9669-27fb9718890b.png)
+
+### 5. 무비차트
+
+![image](https://user-images.githubusercontent.com/24274424/62146820-1fcfeb00-b331-11e9-8fd4-012ee803a666.png)
+
+### 6. 날짜검색 (ex 날짜검색 / {상영관코드} / {날짜})
+
+![image](https://user-images.githubusercontent.com/24274424/62146843-324a2480-b331-11e9-9365-994ad84a83b1.png)
+
+---
 
 #### Reference 
 
