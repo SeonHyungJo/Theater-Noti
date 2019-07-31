@@ -6,6 +6,9 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 
+// Schedule
+const schedule = require('node-schedule')
+
 // Slack Bot Token
 const token = process.env.SLACK_BOT_TOKEN;
 
@@ -106,8 +109,6 @@ const getMovieChart = () => {
       return ulList;
     })
 }
-
-getMovieChart()
 
 /**
  * ------------------------------------
@@ -220,6 +221,9 @@ const searchTheaterToName = (searchText = '') => {
 // Search Movie List to Date in Specify Theater
 const searchMovieToDate = async (theaterCode = '0055', date = (new Date()).toISOString().slice(0, 10).replace(/-/g, '')) => {
   const theaterData = await getParsingData('', theaterCode, date);
+
+  console.log('날짜 검색 결과 : ', theaterData)
+
   const blocks = [
     {
       'type': 'context',
@@ -258,9 +262,90 @@ const getMovieList = async () => {
   })
 }
 
+/**
+ * All alarmList
+ * -------------
+ * 
+ * Form Example
+ * [{
+ *  theaterCode : '0055',
+ *  date : '20190731',
+ *  movieTitle : '알라딘'
+ * }]
+ * 
+ */
+let alarmList = []
+
+// create All Alarm List Blocks
+const createAlarmListBlocks = (alarmList) => {
+  return alarmList.map((alram, index) => {
+    return {
+      'type': 'context',
+      'elements': [
+        {
+          'type': 'mrkdwn',
+          'text': `*알람 ${index + 1} :* ${alram.theaterCode} / ${alram.date} / ${alram.movieTitle}`
+        },
+      ]
+    }
+  })
+}
+
+// deleteAlarmList
+const deleteAlarmList = (targetIndex) => {
+  alarmList = alarmList.filter((alram, index) => {
+    return index !== targetIndex
+  })
+
+  return createAlarmListBlocks(alarmList)
+}
+
+// create Ring Ding Dong Block
+const createRingRingBlocks = (alarmInfo, movieInfo) => {
+  return [{
+    'type': 'context',
+    'elements': [
+      {
+        'type': 'mrkdwn',
+        'text': `*!!알람!!*  *${alarmInfo.date}* *${movieInfo.title}* 예매를 시작했습니다.  / ${movieInfo.hallType}`
+      },
+    ]
+  }]
+}
+
+// Check Alarm List
+const checkAlarmList = () => {
+  const successList = alarmList.map(async (alarm, index) => {
+    const searchList = await getParsingData('', alarm.theaterCode, alarm.date);
+    const checkedMovieList = searchList.dataList.filter((movie) => movie.title === alarm.movieTitle)
+
+    return { alarm, index, movie: checkedMovieList[0] }
+  })
+
+  successList.map((promise) => {
+    promise.then((alarmDatas) => {
+      if (alarmDatas.movie) {
+        const blocks = createRingRingBlocks(alarmDatas.alarm, alarmDatas.movie)
+        web.chat.postMessage({ blocks, channel: topChannel })
+
+        return alarmDatas.index
+      }
+
+      return -1
+    }).then((index) => {
+      if (index >= 0) {
+        const blocks = deleteAlarmList(parseInt(index))
+        web.chat.postMessage({ blocks, channel: topChannel })
+      }
+    })
+  })
+}
+
 // Create Message
+let topChannel = ''
 rtm.on('message', async event => {
   const eventCodeList = event.text.split('/').map((text) => text.trim())
+  topChannel = event.channel
   console.log(eventCodeList);
   try {
     let result;
@@ -296,6 +381,57 @@ rtm.on('message', async event => {
       result = await web.chat.postMessage({ blocks, channel: event.channel })
     }
 
+    /** 
+     * -------------------------------------------------------
+     * 제일 중요한 부분으로 알림에 대한 전반적인 CRUD를 만들기
+     * ------------------------------------------------------- 
+     *  
+     * Message 형식 
+     * - Create : 알람 / 설정 / 상영관코드 / 날짜 / 영화이름
+     * - Read : 알람 / 조회
+     * - Delete : 알람 / 삭제 / 인덱스
+     * 
+     * 1. 모든 알람에 대한 정보는 List로 관리한다.
+     * 2. 일정 시간마다 Loop를 돌면서 해당 설정한 알람에 대한 확인을 한다.
+     * 3. 설정한 알람이 실행된 후 알람내역에서 삭제한다.
+     * 4. !! 된다면 예매 사이트를 보내주도록 구현 !!
+     * 
+     */
+
+    if (eventCodeList[0] === '알람') {
+      switch (eventCodeList[1]) {
+        case '조회':
+          blocks = await createAlarmListBlocks(alarmList)
+          result = await web.chat.postMessage({ blocks, channel: event.channel })
+          break;
+        case '삭제':
+          blocks = await deleteAlarmList(parseInt(eventCodeList[2]) - 1)
+
+          sendMessage(`알람이 삭제되었습니다.`, event.channel)
+          result = await web.chat.postMessage({ blocks, channel: event.channel })
+          break;
+        case '설정':
+          if (!eventCodeList[4]) {
+            sendMessage(`알람설정이 실패했습니다.`, event.channel)
+          } else {
+            alarmList = [...alarmList, {
+              theaterCode: `${eventCodeList[2]}` || '0055',
+              date: `${eventCodeList[3]}` || (new Date()).toISOString().slice(0, 10).replace(/-/g, ''),
+              movieTitle: `${eventCodeList[4]}` || ''
+            }]
+
+            sendMessage(`알람이 추가되었습니다.`, event.channel)
+
+            blocks = await createAlarmListBlocks(alarmList)
+            result = await web.chat.postMessage({ blocks, channel: event.channel })
+          }
+          break;
+
+        default:
+          break;
+      }
+    }
+
     console.log('result : ', result)
 
   } catch (error) {
@@ -303,11 +439,17 @@ rtm.on('message', async event => {
   }
 });
 
-
 /**
  * Connect to Slack
  */
 (async () => {
   const { self, team } = await rtm.start();
   console.log(`Listening RTM`, self, team);
+
+  // Start Schedule
+  schedule.scheduleJob('*/4 * * * *', function () {
+    if (alarmList.length > 0 && topChannel != '') {
+      checkAlarmList()
+    }
+  })
 })();
