@@ -1,1 +1,4 @@
 
+workflow "IDENTIFIER" {
+  on = "EVENT"
+}
