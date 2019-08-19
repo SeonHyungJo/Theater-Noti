@@ -338,7 +338,7 @@ const checkAlarmList = () => {
 // Create Message
 let topChannel = ''
 rtm.on('message', async event => {
-  const eventCodeList = event.text.split('/').map((text) => text.trim())
+  const eventCodeList = event.text.split('/').map((text) => text.replace(/\s/gi, ""))
   topChannel = event.channel
   console.log(eventCodeList);
   try {
