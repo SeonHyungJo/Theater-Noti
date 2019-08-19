@@ -163,23 +163,42 @@ const createHelpMessage = async () => {
   ]
 }
 
-// Search Region Code
-const searchRegionCode = async () => {
-  const regionData = fs.readFileSync(`./regionCode.json`, 'utf8');
-  const regionCodeList = JSON.parse(regionData).RegionCodeList;
-
-  const blocks = regionCodeList.map((item) => {
+const getMovieContent = (movieList) => {
+  return movieList.map((item) => {
+    const timeList = item.timeTable.sort().reduce((acc, time) => acc + ', ' + time)
     return {
       'type': 'context',
       'elements': [
         {
           'type': 'mrkdwn',
-          'text': `*${item.RegionName}:* ${item.RegionCode}`
+          'text': `*${item.title}* / ${item.hallType} / ${timeList}`
         }
       ]
     }
   })
-  return blocks
+}
+
+// Get Region Code
+const getRegionCode = async () => {
+  const regionData = fs.readFileSync(`./regionCode.json`, 'utf8');
+  const regionCodeList = JSON.parse(regionData).RegionCodeList;
+
+  return regionCodeList
+}
+
+// Create Code Info Block
+const createCodeInfoBlock = async (codeInfoList) => {
+  return codeInfoList.map((item) => {
+    return {
+      'type': 'context',
+      'elements': [
+        {
+          'type': 'mrkdwn',
+          'text': `*${item.name}:* ${item.code}`
+        }
+      ]
+    }
+  })
 }
 
 // Search Theater Code
@@ -191,17 +210,7 @@ const searchTheaterCode = async (regionCode = 00, channel) => {
   const theaterData = fs.readFileSync(`theaterJsonData_${regionCode}.json`, 'utf-8');
   const theaterCodeList = JSON.parse(theaterData).AreaTheaterDetailList;
 
-  const blocks = theaterCodeList.map((item) => {
-    return {
-      'type': 'context',
-      'elements': [
-        {
-          'type': 'mrkdwn',
-          'text': `*${item.TheaterName}:* ${item.TheaterCode}`
-        }
-      ]
-    }
-  })
+  const blocks = createCodeInfoBlock(theaterCodeList)
 
   return blocks
 }
@@ -365,7 +374,7 @@ const checkAlarmList = () => {
 // Create Message
 let topChannel = ''
 rtm.on('message', async event => {
-  const eventCodeList = event.text.split('/').map((text) => text.trim())
+  const eventCodeList = event.text.split('/').map((text) => text.replace(/\s/gi, ""))
   topChannel = event.channel
   console.log('event===>', event)
   console.log(eventCodeList);
@@ -379,7 +388,16 @@ rtm.on('message', async event => {
     }
 
     if (eventCodeList[0] === '지역코드') {
-      blocks = await searchRegionCode()
+      const regionCodeList = await getRegionCode()
+      let blocks
+
+      if (eventCodeList[1]) {
+        const searchRegion = regionCodeList.filter((item) => item.name.includes(eventCodeList[1]))
+        blocks = await createCodeInfoBlock(searchRegion)
+      } else {
+        blocks = await createCodeInfoBlock(regionCodeList)
+      }
+
       result = await web.chat.postMessage({ blocks, channel: event.channel })
     }
 
