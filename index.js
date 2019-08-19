@@ -23,9 +23,10 @@ const rtm = new RTMClient(token);
  * 날짜 형식 변경
  */
 const setFormatDate = (stringDate) => {
-  const year = stringDate.substr(0,4);
-  const month = stringDate.substr(4,2);
-  const day = stringDate.substr(6,2);
+  const year = stringDate.substr(0, 4);
+  const month = stringDate.substr(4, 2);
+  const day = stringDate.substr(6, 2);
+
   return `${year}년 ${month}월 ${day}일`;
 }
 
@@ -299,6 +300,18 @@ const createAlarmListBlocks = (alarmList) => {
   })
 }
 
+const createNoneAlarmListBlock = () => {
+  return [{
+    'type': 'context',
+    'elements': [
+      {
+        'type': 'mrkdwn',
+        'text': `*설정된 알람내역이 없습니다.*`
+      },
+    ]
+  }]
+}
+
 // deleteAlarmList
 const deleteAlarmList = (targetIndex) => {
   alarmList = alarmList.filter((alram, index) => {
@@ -354,6 +367,7 @@ let topChannel = ''
 rtm.on('message', async event => {
   const eventCodeList = event.text.split('/').map((text) => text.trim())
   topChannel = event.channel
+  console.log('event===>', event)
   console.log(eventCodeList);
   try {
     let result;
@@ -409,7 +423,7 @@ rtm.on('message', async event => {
     if (eventCodeList[0] === '알람') {
       switch (eventCodeList[1]) {
         case '조회':
-          blocks = await createAlarmListBlocks(alarmList)
+          blocks = await alarmList.length === 0 ? createNoneAlarmListBlock() : createAlarmListBlocks(alarmList)
           result = await web.chat.postMessage({ blocks, channel: event.channel })
           break;
         case '삭제':
@@ -455,7 +469,7 @@ rtm.on('message', async event => {
   console.log(`Listening RTM`, self, team);
 
   // Start Schedule
-  schedule.scheduleJob('*/1 * * * *', function () {
+  schedule.scheduleJob('*/4 * * * *', function () {
     if (alarmList.length > 0 && topChannel != '') {
       checkAlarmList()
     }
