@@ -19,6 +19,17 @@ const { WebClient } = require('@slack/web-api');
 const web = new WebClient(token);
 const rtm = new RTMClient(token);
 
+/** 
+ * 날짜 형식 변경
+ */
+const setFormatDate = (stringDate) => {
+  const year = stringDate.substr(0, 4);
+  const month = stringDate.substr(4, 2);
+  const day = stringDate.substr(6, 2);
+
+  return `${year}년 ${month}월 ${day}일`;
+}
+
 /**
  * 해당 상영관 관련 영화정보 가져오기
  * -----------------------------------
@@ -110,6 +121,22 @@ const getMovieChart = () => {
     })
 }
 
+// Create Movie Chart Blocks
+const createMovieChartBlock = (movieList) => {
+  return movieList.map((item) => {
+    const timeList = item.timeTable.sort().reduce((acc, time) => acc + ', ' + time)
+    return {
+      'type': 'context',
+      'elements': [
+        {
+          'type': 'mrkdwn',
+          'text': `*${item.title}* / ${item.hallType} / ${timeList}`
+        }
+      ]
+    }
+  })
+}
+
 /**
  * ------------------------------------
  * Bot Setting
@@ -134,21 +161,6 @@ const createHelpMessage = async () => {
       ]
     }
   ]
-}
-
-const getMovieContent = (movieList) => {
-  return movieList.map((item) => {
-    const timeList = item.timeTable.sort().reduce((acc, time) => acc + ', ' + time)
-    return {
-      'type': 'context',
-      'elements': [
-        {
-          'type': 'mrkdwn',
-          'text': `*${item.title}* / ${item.hallType} / ${timeList}`
-        }
-      ]
-    }
-  })
 }
 
 // Search Region Code
@@ -221,9 +233,6 @@ const searchTheaterToName = (searchText = '') => {
 // Search Movie List to Date in Specify Theater
 const searchMovieToDate = async (theaterCode = '0055', date = (new Date()).toISOString().slice(0, 10).replace(/-/g, '')) => {
   const theaterData = await getParsingData('', theaterCode, date);
-
-  console.log('날짜 검색 결과 : ', theaterData)
-
   const blocks = [
     {
       'type': 'context',
@@ -240,7 +249,7 @@ const searchMovieToDate = async (theaterCode = '0055', date = (new Date()).toISO
     }
   ]
 
-  return [...blocks, ...getMovieContent(theaterData.dataList)]
+  return [...blocks, ...createMovieChartBlock(theaterData.dataList)]
 }
 
 // Get Movie Chart
@@ -291,6 +300,18 @@ const createAlarmListBlocks = (alarmList) => {
   })
 }
 
+const createNoneAlarmListBlock = () => {
+  return [{
+    'type': 'context',
+    'elements': [
+      {
+        'type': 'mrkdwn',
+        'text': `*설정된 알람내역이 없습니다.*`
+      },
+    ]
+  }]
+}
+
 // deleteAlarmList
 const deleteAlarmList = (targetIndex) => {
   alarmList = alarmList.filter((alram, index) => {
@@ -307,7 +328,7 @@ const createRingRingBlocks = (alarmInfo, movieInfo) => {
     'elements': [
       {
         'type': 'mrkdwn',
-        'text': `*!!알람!!*  *${alarmInfo.date}* *${movieInfo.title}* 예매를 시작했습니다.  / ${movieInfo.hallType}`
+        'text': `*!!알람!!*  *${setFormatDate(alarmInfo.date)}* *${movieInfo.title}* 예매를 시작했습니다.  / ${movieInfo.hallType}`
       },
     ]
   }]
@@ -346,6 +367,7 @@ let topChannel = ''
 rtm.on('message', async event => {
   const eventCodeList = event.text.split('/').map((text) => text.trim())
   topChannel = event.channel
+  console.log('event===>', event)
   console.log(eventCodeList);
   try {
     let result;
@@ -401,7 +423,7 @@ rtm.on('message', async event => {
     if (eventCodeList[0] === '알람') {
       switch (eventCodeList[1]) {
         case '조회':
-          blocks = await createAlarmListBlocks(alarmList)
+          blocks = await alarmList.length === 0 ? createNoneAlarmListBlock() : createAlarmListBlocks(alarmList)
           result = await web.chat.postMessage({ blocks, channel: event.channel })
           break;
         case '삭제':
