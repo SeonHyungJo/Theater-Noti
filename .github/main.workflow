@@ -1,4 +1,0 @@
-
-workflow "IDENTIFIER" {
-  on = "EVENT"
-}
