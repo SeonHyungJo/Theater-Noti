@@ -90,18 +90,18 @@ const getParsingData = async (areaCode, theaterCode, date) => {
  * CGV 무비차트 가져오기
  * -----------------------------------
  */
-const getMovieChart = () => {
-  const getMovieChartData = async () => {
-    try {
-      return await axios.get(
-        `http://www.cgv.co.kr/movies/`
-      );
-    } catch (error) {
-      console.error(error);
-    }
-  };
+const getCGVChartData = async () => {
+  try {
+    return await axios.get(
+      `http://www.cgv.co.kr/movies/`
+    );
+  } catch (error) {
+    console.error(error);
+  }
+};
 
-  return getMovieChartData()
+const getMovieChart = () => {
+  return getCGVChartData()
     .then(html => {
       const ulList = []
       const $ = cheerio.load(html.data);
