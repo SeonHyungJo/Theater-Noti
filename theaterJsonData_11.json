@@ -1,0 +1,67 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "11",
+      "code": "0058",
+      "name": "CGV대구",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0157",
+      "name": "CGV대구수성",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0108",
+      "name": "CGV대구스타디움",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0185",
+      "name": "CGV대구아카데미",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0216",
+      "name": "CGV대구월성",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0117",
+      "name": "CGV대구이시아",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0071",
+      "name": "CGV대구칠곡",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0147",
+      "name": "CGV대구한일",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "11",
+      "code": "0109",
+      "name": "CGV대구현대",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

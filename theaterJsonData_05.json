@@ -1,0 +1,95 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "05",
+      "code": "0065",
+      "name": "CGV남포",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0061",
+      "name": "CGV대연",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0151",
+      "name": "CGV대한",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0042",
+      "name": "CGV동래",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0005",
+      "name": "CGV서면",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0285",
+      "name": "CGV서면중앙대로",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0089",
+      "name": "CGV센텀시티",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0160",
+      "name": "CGV아시아드",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0238",
+      "name": "CGV정관",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0245",
+      "name": "CGV하단",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0253",
+      "name": "CGV해운대",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "0159",
+      "name": "CGV화명",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "05",
+      "code": "P004",
+      "name": "CINE de CHEF 센텀",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

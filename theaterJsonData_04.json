@@ -1,0 +1,102 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "04",
+      "code": "0220",
+      "name": "CGV광양",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0221",
+      "name": "CGV광양 엘에프스퀘어",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0277",
+      "name": "CGV군산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0237",
+      "name": "CGV나주",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0289",
+      "name": "CGV목포",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0280",
+      "name": "CGV목포평화광장",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0225",
+      "name": "CGV서전주",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0114",
+      "name": "CGV순천",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0268",
+      "name": "CGV순천신대",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0208",
+      "name": "CGV여수웅천",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0020",
+      "name": "CGV익산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0213",
+      "name": "CGV전주고사",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0179",
+      "name": "CGV전주효자",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "04",
+      "code": "0186",
+      "name": "CGV정읍",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

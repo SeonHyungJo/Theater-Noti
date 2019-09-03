@@ -1,0 +1,214 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "01",
+      "code": "0056",
+      "name": "CGV강남",
+      "name_ENG": null,
+      "IsSelected": true
+    },
+    {
+      "RegionCode": "01",
+      "code": "0001",
+      "name": "CGV강변",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0229",
+      "name": "CGV건대입구",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0010",
+      "name": "CGV구로",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0063",
+      "name": "CGV대학로",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0252",
+      "name": "CGV동대문",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0230",
+      "name": "CGV등촌",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0009",
+      "name": "CGV명동",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0105",
+      "name": "CGV명동역 씨네라이브러리",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0011",
+      "name": "CGV목동",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0057",
+      "name": "CGV미아",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0030",
+      "name": "CGV불광",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0046",
+      "name": "CGV상봉",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0083",
+      "name": "CGV성신여대입구",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0088",
+      "name": "CGV송파",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0276",
+      "name": "CGV수유",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0150",
+      "name": "CGV신촌아트레온",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0040",
+      "name": "CGV압구정",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0112",
+      "name": "CGV여의도",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0059",
+      "name": "CGV영등포",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0074",
+      "name": "CGV왕십리",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0013",
+      "name": "CGV용산아이파크몰",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0131",
+      "name": "CGV중계",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0199",
+      "name": "CGV천호",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0107",
+      "name": "CGV청담씨네시티",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0223",
+      "name": "CGV피카디리1958",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0164",
+      "name": "CGV하계",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "0191",
+      "name": "CGV홍대",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "P001",
+      "name": "CINE de CHEF 압구정",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "01",
+      "code": "P013",
+      "name": "CINE de CHEF 용산아이파크몰",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

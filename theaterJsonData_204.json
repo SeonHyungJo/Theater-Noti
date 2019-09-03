@@ -1,0 +1,95 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "204",
+      "code": "0263",
+      "name": "CGV거제",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0053",
+      "name": "CGV구미",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0240",
+      "name": "CGV김천율곡",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0028",
+      "name": "CGV김해",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0239",
+      "name": "CGV김해장유",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0033",
+      "name": "CGV마산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0097",
+      "name": "CGV북포항",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0272",
+      "name": "CGV안동",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0222",
+      "name": "CGV양산물금",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0023",
+      "name": "CGV창원",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0079",
+      "name": "CGV창원더시티",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0156",
+      "name": "CGV통영",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "204",
+      "code": "0045",
+      "name": "CGV포항",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

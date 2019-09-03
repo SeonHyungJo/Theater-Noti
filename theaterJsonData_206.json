@@ -1,0 +1,53 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "206",
+      "code": "0295",
+      "name": "CGV광주금남로",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "206",
+      "code": "0193",
+      "name": "CGV광주상무",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "206",
+      "code": "0210",
+      "name": "CGV광주용봉",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "206",
+      "code": "0218",
+      "name": "CGV광주첨단",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "206",
+      "code": "0244",
+      "name": "CGV광주충장로",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "206",
+      "code": "0090",
+      "name": "CGV광주터미널",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "206",
+      "code": "0215",
+      "name": "CGV광주하남",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

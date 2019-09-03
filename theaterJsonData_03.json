@@ -1,0 +1,46 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "03",
+      "code": "0007",
+      "name": "CGV대전",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "03",
+      "code": "0154",
+      "name": "CGV대전가오",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "03",
+      "code": "0202",
+      "name": "CGV대전탄방",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "03",
+      "code": "0127",
+      "name": "CGV대전터미널",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "03",
+      "code": "0206",
+      "name": "CGV유성노은",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "03",
+      "code": "0209",
+      "name": "CGV유성온천",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

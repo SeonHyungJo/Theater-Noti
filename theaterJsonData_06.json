@@ -1,0 +1,18 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "06",
+      "code": "0121",
+      "name": "CGV제주",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "06",
+      "code": "0259",
+      "name": "CGV제주노형",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "205",
+      "code": "0207",
+      "name": "CGV당진",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0275",
+      "name": "CGV보령",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0091",
+      "name": "CGV서산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0219",
+      "name": "CGV세종",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0044",
+      "name": "CGV천안",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0293",
+      "name": "CGV천안터미널",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0110",
+      "name": "CGV천안펜타포트",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0228",
+      "name": "CGV청주(서문)",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0297",
+      "name": "CGV청주성안길",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0282",
+      "name": "CGV청주율량",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0142",
+      "name": "CGV청주지웰시티",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0294",
+      "name": "CGV청주터미널",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0284",
+      "name": "CGV충북혁신",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "205",
+      "code": "0217",
+      "name": "CGV홍성",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

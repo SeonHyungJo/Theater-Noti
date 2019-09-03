@@ -1,0 +1,284 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "02",
+      "code": "0260",
+      "name": "CGV경기광주",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0266",
+      "name": "CGV광교상현",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0182",
+      "name": "CGV광명철산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0232",
+      "name": "CGV구리",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0177",
+      "name": "CGV김포",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0188",
+      "name": "CGV김포운양",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0126",
+      "name": "CGV김포풍무",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0298",
+      "name": "CGV김포한강",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0124",
+      "name": "CGV동백",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0041",
+      "name": "CGV동수원",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0106",
+      "name": "CGV동탄",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0265",
+      "name": "CGV동탄역",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0226",
+      "name": "CGV배곧",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0155",
+      "name": "CGV범계",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0015",
+      "name": "CGV부천",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0194",
+      "name": "CGV부천역",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0049",
+      "name": "CGV북수원",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0242",
+      "name": "CGV산본",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0196",
+      "name": "CGV서현",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0143",
+      "name": "CGV소풍",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0012",
+      "name": "CGV수원",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0274",
+      "name": "CGV스타필드시티위례",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0073",
+      "name": "CGV시흥",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0211",
+      "name": "CGV안산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0279",
+      "name": "CGV안성",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0003",
+      "name": "CGV야탑",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0029",
+      "name": "CGV역곡",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0004",
+      "name": "CGV오리",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0271",
+      "name": "CGV용인",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0113",
+      "name": "CGV의정부",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0187",
+      "name": "CGV의정부태흥",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0205",
+      "name": "CGV이천",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0054",
+      "name": "CGV일산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0055",
+      "name": "CGV죽전",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0148",
+      "name": "CGV파주문산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0181",
+      "name": "CGV판교",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0195",
+      "name": "CGV평촌",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0052",
+      "name": "CGV평택",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0214",
+      "name": "CGV평택소사",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "02",
+      "code": "0145",
+      "name": "CGV화정",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

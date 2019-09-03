@@ -1,0 +1,67 @@
+{
+  "RegionCodeList": [
+    {
+      "code": "01",
+      "name": "서울",
+      "name_ENG": "Seoul",
+      "DisplayOrder": "1",
+      "IsSelected": true
+    },
+    {
+      "code": "02",
+      "name": "경기",
+      "name_ENG": "Gyeonggi",
+      "DisplayOrder": "2",
+      "IsSelected": false
+    },
+    {
+      "code": "12",
+      "name": "강원",
+      "name_ENG": "Kangwon",
+      "DisplayOrder": "4",
+      "IsSelected": false
+    },
+    {
+      "code": "202",
+      "name": "인천",
+      "name_ENG": "Incheon",
+      "DisplayOrder": "3",
+      "IsSelected": false
+    },
+    {
+      "code": "03,205",
+      "name": "대전/충청",
+      "name_ENG": "Daejeon/Chungcheong",
+      "DisplayOrder": "5",
+      "IsSelected": false
+    },
+    {
+      "code": "11",
+      "name": "대구",
+      "name_ENG": "Daegu",
+      "DisplayOrder": "6",
+      "IsSelected": false
+    },
+    {
+      "code": "05,207",
+      "name": "부산/울산",
+      "name_ENG": "Busan/Ulsan",
+      "DisplayOrder": "7",
+      "IsSelected": false
+    },
+    {
+      "code": "204",
+      "name": "경상",
+      "name_ENG": "Gyeongsang",
+      "DisplayOrder": "8",
+      "IsSelected": false
+    },
+    {
+      "code": "206,04,06",
+      "name": "광주/전라/제주",
+      "name_ENG": "Gwangju/Jeonlla/Jeju",
+      "DisplayOrder": "9",
+      "IsSelected": false
+    }
+  ]
+}

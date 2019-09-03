@@ -1,0 +1,18 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "207",
+      "code": "0128",
+      "name": "CGV울산삼산",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "207",
+      "code": "0246",
+      "name": "CGV울산진장",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

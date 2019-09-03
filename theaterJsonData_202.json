@@ -1,0 +1,74 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "202",
+      "code": "0043",
+      "name": "CGV계양",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0198",
+      "name": "CGV남주안",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0021",
+      "name": "CGV부평",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0247",
+      "name": "CGV연수역",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0002",
+      "name": "CGV인천",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0118",
+      "name": "CGV인천공항",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0254",
+      "name": "CGV인천논현",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0258",
+      "name": "CGV인천연수",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0027",
+      "name": "CGV주안역",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "202",
+      "code": "0235",
+      "name": "CGV청라",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}

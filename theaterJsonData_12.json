@@ -1,0 +1,39 @@
+{
+  "AreaTheaterDetailList": [
+    {
+      "RegionCode": "12",
+      "code": "0139",
+      "name": "CGV강릉",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "12",
+      "code": "0144",
+      "name": "CGV원주",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "12",
+      "code": "0281",
+      "name": "CGV인제",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "12",
+      "code": "0070",
+      "name": "CGV춘천",
+      "name_ENG": null,
+      "IsSelected": false
+    },
+    {
+      "RegionCode": "12",
+      "code": "0189",
+      "name": "CGV춘천명동",
+      "name_ENG": null,
+      "IsSelected": false
+    }
+  ]
+}
